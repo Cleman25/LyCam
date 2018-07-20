@@ -1,0 +1,160 @@
+body, html {
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	height:100%;
+	width:100%;
+	position:relative;
+	margin:0;
+	padding:0;
+    background: #010101;
+}
+
+#remoteview {
+	position: relative;
+    height: -webkit-fill-available;
+    width: 100%;
+    background: #020202;
+    display:block;
+    border-radius:2px;
+}
+
+#view {
+	position: relative;
+    width: 70%;
+    background: #020202;
+    display:block;
+    border-radius:2px;
+}
+
+#selfview {
+	background: #010101;
+    box-shadow: 0 0 15px rgba(193,39,45, 1);
+    border-radius: 4px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 300;
+    right: 10;
+    top: 10;
+    display:block;
+}
+
+#myId {
+	position: absolute;
+    margin: 4px;
+    background: rgba(255,255,255, 0.3);
+    padding: 4px;
+    z-index: 1000;
+    display: block;
+    font-family: arial;
+    text-transform: uppercase;
+    color: #f1f1f1;
+    border-radius: 3px;
+}
+
+#app {
+    border-radius: 2px;
+    position: relative;
+    height: 700px;
+    width: 1300px;
+    display: block;
+    box-shadow: 0 0 10px #333;
+    padding:3px;
+	background:rgba(193,39,45, 0.5);
+}
+
+#endCall {
+	display:block !important;
+	background: #c1272d;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    font-weight: bold;
+    font-family: arial;
+    content: "x";
+    cursor: pointer;
+    /*box-shadow: 0 0 15px #111;*/
+    color: #f1f1f1;
+}
+
+#controls {
+	display:block;
+	width:100%;
+	position:absolute;
+	width:calc(100% - 32px);
+	height:auto;
+	bottom:8px;
+	margin:0 8px;
+	padding:8px;
+	border-radius:4px;
+	background:rgba(193,39,45, 0.5);
+}
+
+#makeCall {
+	display:inline-block;
+	background: #c1272d;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    font-weight: bold;
+    font-family: arial;
+    cursor: pointer;
+    /*box-shadow: 0 0 15px #111;*/
+    color: #f1f1f1;
+}
+
+#listedUser {
+	width: calc(100% - 16px);
+    position: relative;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 8px;
+    height: 40px;
+	background:rgba(193,39,45, 0.5);
+}
+
+#users {
+	padding: 0;
+    width: 100%;
+    overflow-y: auto;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#otherUser {
+	display:inline-block;
+	width:75%;
+	font-weight:bold;
+	font-family:arial;
+	font-size:16px;
+	padding:12px;
+}
+
+#otherUser p {
+	margin:0;
+}
+
+#list {
+	width: 28.5%;
+    color: #f1f1f1;
+    border-radius: 2px;
+    height: calc(100% - 16px);
+    padding: 8px;
+    position: relative;
+    margin: 0;
+    background: #010101;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.clear {
+	clear:both;
+}
